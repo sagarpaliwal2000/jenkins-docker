@@ -1,5 +1,8 @@
 node {
     def app
+    tools {
+        maven 'Maven 3.9.1'
+    }
 
     stage('Clone repository') {
         /* Let's make sure we have the repository cloned to our workspace */
